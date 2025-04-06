@@ -8,15 +8,20 @@
       #list {
         list-style: none;
         padding: 0;
+        text-align: center;
       }
     </style>
-    <script type="module" crossorigin src="/betaworkouttracker/assets/index-D7L1sdlK.js"></script>
+    <script type="module" crossorigin src="/betaworkouttracker/assets/index-BOvURCek.js"></script>
   </head>
-  <body>
-    <ul id="list"></ul>
+  <body style="background-color:#484848;">
     <form id="new-task-form">
       <input type="text" id="new-task-title" placeholder="Workout name" required />
-      <button type="submit">Add</button>
+      <input type="number" id="sets" placeholder="Sets" min="1" required />
+      <input type="number" id="reps" placeholder="Reps" min="1" required />
+      <button type="submit">Add Workout</button>
     </form>
+
+    <ul id="list"></ul>
+
   </body>
 </html>
